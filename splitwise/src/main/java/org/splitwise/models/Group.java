@@ -1,18 +1,30 @@
 package org.splitwise.models;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Group {
-    String id;
+    public String id;
     String name;
-    List<User> users;
+    public List<User> users;
     List<Expense> expenses;
     List<Balance> balances;
+    String createdBy;
 
-    public Group(String id, String name, List<User> users, List<Expense> expenses, List<Balance> balances){
+    public Group(String id, String name,  String createdBy){
         this.id = id;
         this.name = name;
-        this.users = users;
-        this.expenses = expenses;
-        this.balances = balances;
+        this.createdBy = createdBy;
+        this.users = new ArrayList<>();
+        this.expenses = new ArrayList<>();
+        this.balances = new ArrayList<>();
     }
+
+    public void addUser(User user){
+        this.users.add(user);
+    }
+
+    public void addExpense(Expense expense){
+        this.expenses.add(expense);
+    }
+
 }
