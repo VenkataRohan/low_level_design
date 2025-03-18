@@ -1,17 +1,17 @@
 package org.splitwise.models.split;
 
 import org.splitwise.models.Split;
-import org.splitwise.models.User;
+
 
 public class SplitFactory {
-    public static Split createSplit(ExpenseType expenseType, User user, double amount){
+    public static Split createSplit(ExpenseType expenseType, String userId, int amount){
         switch (expenseType) {
             case EQUAL:
-                return new EqualSplit(user);
+                return new EqualSplit(userId);
             case UNEQUAL:
-                return new UnEqualSplit(user, amount);
+                return new UnEqualSplit(userId, amount);
             case PERCENT:
-             return new PercentSplit(user, amount);
+             return new PercentSplit(userId, amount);
             default:
                 throw new IllegalArgumentException("Invalid Expense Type");
         }
