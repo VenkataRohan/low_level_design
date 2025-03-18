@@ -25,4 +25,8 @@ public class ExpenseService {
         return expense;
     }
 
+    public List<Expense> getAllGroupExpneses(String groupId){
+        return groupExpense.get(groupId);
+    }
+
 }
