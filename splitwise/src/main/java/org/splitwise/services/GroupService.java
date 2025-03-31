@@ -38,8 +38,10 @@ public class GroupService {
         Map<String, Integer> balance = new HashMap<>();
         for (Expense exp : expenses) {
             for (Split split : exp.splits) {
-                balance.put(split.getUserId(), balance.getOrDefault(split.getUserId(), 0) + split.getAmount());
+                balance.put(split.getUserId(), balance.getOrDefault(split.getUserId(), 0) - split.getAmount());
             }
+
+            balance.put(exp.paidBy, balance.getOrDefault(exp.paidBy, 0) + exp.amount);
         }
 
         return balance;
