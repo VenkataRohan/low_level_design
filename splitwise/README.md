@@ -1,0 +1,1 @@
+![Splitwise UML](splitwiseUml.jpg)
