@@ -1,15 +1,48 @@
 package org.splitwise.models.split;
+import org.splitwise.models.ExpensePaidFor;
 import org.splitwise.models.Split;
 
-public class PercentSplit extends Split {
-    private double percent;
+import java.util.ArrayList;
+import java.util.List;
 
-    public PercentSplit(String userId, double percent) {
-        super(userId, 0); // Amount will be set later
-        this.percent = percent;
+
+public class PercentSplit implements ExpenseSplit {
+    List<ExpensePaidFor> expensePaidFor;
+    int totalAmount;
+
+    public PercentSplit(List<ExpensePaidFor> expensePaidFor, int totalAmount) {
+        this.expensePaidFor = expensePaidFor;
+        this.totalAmount = totalAmount;
     }
 
-    public double getPercent() {
-        return percent;
+    @Override
+    public List<Split> calculateSplit(){
+//1000
+//20, 30, 50
+        if(!validate()) throw new Error("Invaid share Split");
+
+        List<Split> splits = new ArrayList<>();
+
+        for(ExpensePaidFor exp : expensePaidFor){
+            splits.add(new Split(exp.userId, (totalAmount/100) * exp.shares));
+        }
+        return splits;
+    }
+
+    @Override
+    public boolean validate(){
+        if(expensePaidFor == null || expensePaidFor.size() == 0){
+            return false;
+        }
+        
+        int shares = 0;
+
+        for(ExpensePaidFor expense : expensePaidFor){
+            shares += expense.shares;
+        }
+
+       
+
+        return  shares == 100;
     }
 }
