@@ -8,10 +8,10 @@ public class SplitFactory {
         switch (expenseType) {
             case EQUAL:
                 return new EqualSplit(expensePaidFor, amount);
-            // case UNEQUAL:
-            //     return new UnEqualSplit(expensePaidFor);
-            // case PERCENT:
-            //  return new PercentSplit(expensePaidFor);
+            case UNEQUAL:
+                return new UnEqualSplit(expensePaidFor, amount);
+            case PERCENT:
+             return new PercentSplit(expensePaidFor, amount);
             default:
                 throw new IllegalArgumentException("Invalid Expense Type");
         }
