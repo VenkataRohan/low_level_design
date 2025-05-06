@@ -1,11 +1,20 @@
 package org.splitwise.models;
 
 public class Split {
-    User user;
-    double amount;
+    String userId;
+    int amount;
 
-   public Split(User user, double amount){
-        this.user = user;
+   public Split(String userId, int amount){
+        this.userId = userId;
         this.amount = amount;
     }
+
+    public String getUserId(){
+        return this.userId;
+    }
+
+    public int getAmount(){
+        return this.amount;
+    }
+
 }
