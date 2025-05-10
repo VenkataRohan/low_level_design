@@ -7,7 +7,7 @@ import org.splitwise.models.Split;
 public interface ExpenseSplit {
     List<Split> calculateSplit();
 
-    void validate();
+    boolean validate();
 }
 
 
