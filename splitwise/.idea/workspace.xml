@@ -4,15 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="967d6d4e-4e0c-4d3c-a803-6da587f71710" name="Changes" comment="" />
+    <list default="true" id="967d6d4e-4e0c-4d3c-a803-6da587f71710" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/Splitwise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/Splitwise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/models/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/models/Expense.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/models/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/models/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/models/Split.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/models/Split.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/models/split/ExpenseSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/models/split/ExpenseSplit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/models/split/PercentSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/models/split/PercentSplit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/models/split/SplitFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/models/split/SplitFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/splitwise/models/split/UnEqualSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/splitwise/models/split/UnEqualSplit.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2tOLzjukMBJkglYx20zqINg8SRf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,6 +36,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
